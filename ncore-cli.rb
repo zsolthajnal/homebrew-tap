@@ -5,21 +5,21 @@
 class NcoreCli < Formula
   desc "Search and download torrents from ncore.pro"
   homepage "https://github.com/zsolthajnal/ncore-cli"
-  version "2.2.0"
+  version "2.2.1"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/zsolthajnal/ncore-cli/releases/download/v2.2.0/ncore-cli_darwin_amd64.tar.gz"
-      sha256 "eade221d7c5ad4de8483f0fc55ce0c1abb2c4bffc9be9c46ef8d94a301bbafe8"
+      url "https://github.com/zsolthajnal/ncore-cli/releases/download/v2.2.1/ncore-cli_darwin_amd64.tar.gz"
+      sha256 "a54636d3e530c72813ac1ae9af7b925a0f1efc376e80f0231f68b82bbddcf2f6"
 
       define_method(:install) do
         bin.install "ncore-cli"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/zsolthajnal/ncore-cli/releases/download/v2.2.0/ncore-cli_darwin_arm64.tar.gz"
-      sha256 "27799249a75fd37e0c12f55600aa95eef8865867b9fdcbc726a5e8a66eb1552f"
+      url "https://github.com/zsolthajnal/ncore-cli/releases/download/v2.2.1/ncore-cli_darwin_arm64.tar.gz"
+      sha256 "d4d9c5b7c94dae82c3dc9db0cbd57b24f62a517413797ecd8c6ec8abe8b958e6"
 
       define_method(:install) do
         bin.install "ncore-cli"
@@ -29,15 +29,15 @@ class NcoreCli < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/zsolthajnal/ncore-cli/releases/download/v2.2.0/ncore-cli_linux_amd64.tar.gz"
-      sha256 "e66a438ea181ef4b4c4df30d5ebe3ade185bd634443820651cb2ffdcd302945d"
+      url "https://github.com/zsolthajnal/ncore-cli/releases/download/v2.2.1/ncore-cli_linux_amd64.tar.gz"
+      sha256 "aadb775085c3bc77fad576692a8e9ded7c03a64a30215dd1181de2f66f896a06"
       define_method(:install) do
         bin.install "ncore-cli"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/zsolthajnal/ncore-cli/releases/download/v2.2.0/ncore-cli_linux_arm64.tar.gz"
-      sha256 "26c2f476b3855ea166ba5d87274d589912fc3a7a005eed17db70af5d7f2b604e"
+      url "https://github.com/zsolthajnal/ncore-cli/releases/download/v2.2.1/ncore-cli_linux_arm64.tar.gz"
+      sha256 "8c6c396323abd6c3894b3f1d07a12200bf17d84026098429297af2180a1975a2"
       define_method(:install) do
         bin.install "ncore-cli"
       end
